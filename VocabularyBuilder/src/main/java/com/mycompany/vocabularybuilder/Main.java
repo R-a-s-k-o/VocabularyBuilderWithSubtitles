@@ -1211,6 +1211,7 @@ public class Main extends javax.swing.JFrame {
                     globalIndexForWords++;
                     boolean isIncludedInDBx = dbQuery.isIncludedInDb(splittedWord.get(globalIndexForWords));
                     if(!isIncludedInDBx){
+                        sentenceField.setText(currentSentence);
                         wordField.setText(splittedWord.get(globalIndexForWords));
                         loopController = false;
                     }
