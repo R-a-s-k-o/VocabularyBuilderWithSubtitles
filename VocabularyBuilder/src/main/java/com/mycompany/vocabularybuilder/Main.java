@@ -993,6 +993,8 @@ public class Main extends javax.swing.JFrame {
                 
                 wordLabelForStudying.setText(dbQuery.returnWordForStudying(index));
                 sentenceLabelForStudying.setText(dbQuery.returnSentenceForStudying(index));
+                meaningLabelForStudying.setVisible(false);
+                meaningLabelForStudying.setText(dbQuery.returnMeaningForStudying(index));
                 isLearnedForStudying = dbQuery.returnIfLearnedForStudying(index);
                 switch (isLearnedForStudying) {
                     case 1:
@@ -1071,6 +1073,8 @@ public class Main extends javax.swing.JFrame {
            
             wordLabelForStudying.setText(dbQuery.returnWordForStudying(index));
             sentenceLabelForStudying.setText(dbQuery.returnSentenceForStudying(index));
+            meaningLabelForStudying.setVisible(false);
+            meaningLabelForStudying.setText(dbQuery.returnMeaningForStudying(index));
             isLearnedForStudying = dbQuery.returnIfLearnedForStudying(index);
             switch (isLearnedForStudying) {
                 case 1:
